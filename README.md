@@ -1,54 +1,54 @@
-## Lohelani Hicks
+## lh
 
-## 11/12/20
+## jl;
 
-# readme-generator
+# hj;
 
 ---
 
 ### Table of contents:
-* [License](#license)
-* [General](#general)
+- [License](#license)
+- [General](#general)
         * [Description](#description)
         * [Instructions](#instructions)
         * [Usage Information](#usage-information)
         * [Constribution Guidelines](#contribution-guidelines)
-* [Link to Deployed Application](#link-to-deployed-application)
-* [Eamil](#email)
-* [Instructional Video](#instructional-video)
-* [Screenshot](#screenshot)
+- [Link to Deployed Application](#link-to-deployed-application)
+- [Email](#email)
+- [Instructional Video](#instructional-video)
+- [Screenshot](#screenshot)
 
 
 ---
 
 # License:
 
-   None
-   ![License](https://img.shields.io/badge/license-None-yellow.svg)
+   
+   ![License](https://img.shields.io/badge/license--yellow.svg)
 
 ### General:
 
-   * Description: test
-   * Instructions: test
-   * Usage Information: test
-   * Contribution Guidelines: test
+   * Description: hj;
+   * Instructions: hjk;
+   * Usage Information: hjk
+   * Contribution Guidelines: hjk;
             
 ### Link to Deployed Application:
 
-    test
-    test
+    hjk;
+    hjk;
 
 ### Email:
 
-    test
-    test
+    hjk;
+    hj;
 
 ### Instructional Video:
 
-    test
+    hj;
         
 ### Screenshot
     
-    test
+    h;
     
 [Table of Contents](#table-of-contents)
