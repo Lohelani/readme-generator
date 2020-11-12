@@ -1,24 +1,3 @@
-// GIVEN a command-line application that accepts user input
-// WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project ands entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-
-// WHEN I enter my project title
-// THEN this is displayed as the title of the README
-
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-// THEN this information is added to thes of the README entitled Description, Installation, Usage, Contributing, and Tests
-
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the of the README entitled License that explains which license the application is covered under
-
-// WHEN I enter my GitHub username
-// THEN this is added to the of the README entitled Questions, with a link to my GitHub profile
-
-// WHEN I enter my email address
-// THEN this is added to the of the README entitled Questions, with instructions on how to reach me with additional questions
-
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding of the README
 
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -43,6 +22,11 @@ const promptUser = () =>
                 },
                 {
                     type: "input",
+                    name: "title",
+                    message: "What is the title?",
+                },
+                {
+                    type: "input",
                     name: "date",
                     message: "What is the date?",
                 },
@@ -53,8 +37,23 @@ const promptUser = () =>
                 },
                 {
                     type: "input",
-                    name: "requirements",
-                    message: "What are the requirements/goals of this project?",
+                    name: "instructions",
+                    message: "Provide instructions on how to use this project",
+                },
+                {
+                    type: "input",
+                    name: "usage",
+                    message: "please enter the usage information:",
+                },
+                {
+                    type: "input",
+                    name: "guidelines",
+                    message: "please enter the contributing guidelines:",
+                },
+                {
+                    type: "input",
+                    name: "username",
+                    message: "what is your github username?",
                 },
                 {
                     type: "input",
@@ -63,13 +62,23 @@ const promptUser = () =>
                 },
                 {
                     type: "input",
+                    name: "email",
+                    message: "what is your email address?",
+                },
+                {
+                    type: "input",
+                    name: "additional",
+                    message: "Please provide a brief message on how to contact you with further questions:",
+                },
+                {
+                    type: "input",
                     name: "video",
-                    message: "Please provid e alink to walkthrough video.",
+                    message: "Please provide a link to walkthrough video.",
                 },
                 {
                     type: "input",
                     name: "screenshot",
-                    message: "Please provide a link to github screenshot.",
+                    message: "Please provide a screenshot.",
                 },
                 {
                     type: "checkbox",
@@ -82,17 +91,23 @@ const promptUser = () =>
 
 
 const generator = (data) =>
-    `# ${data.name}
+    `## ${data.name}
 
 ## ${data.date}
+
+# ${data.title}
 
 ---
 
 ### Table of contents:
 * [License](#license)
-* [Description](#description)
-* [Requirements](#requirements)
+* [General](#general)
+        * [Description](#description)
+        * [Instructions](#instructions)
+        * [Usage Information](#usage-information)
+        * [Constribution Guidelines](#contribution-guidelines)
 * [Link to Deployed Application](#link-to-deployed-application)
+* [Eamil](#email)
 * [Instructional Video](#instructional-video)
 * [Screenshot](#screenshot)
 
@@ -104,17 +119,22 @@ const generator = (data) =>
    ${data.license}
    ${renderBadges(data.license)}
 
-### Description:
+### General:
 
-    ${data.description}
+   * Description: ${data.description}
+   * Instructions: ${data.instructions}
+   * Usage Information: ${data.usage}
+   * Contribution Guidelines: ${data.guidelines}
             
-***Requirements:***
-
-    ${data.requirements}
-        
 ### Link to Deployed Application:
 
+    ${data.username}
     ${data.github}
+
+### Email:
+
+    ${data.email}
+    ${data.additional}
 
 ### Instructional Video:
 

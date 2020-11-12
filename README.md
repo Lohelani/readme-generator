@@ -1,14 +1,20 @@
-# lo
+## Lohelani Hicks
 
-## lo
+## 11/12/20
+
+# readme-generator
 
 ---
 
 ### Table of contents:
 * [License](#license)
-* [Description](#description)
-* [Requirements](#requirements)
+* [General](#general)
+        * [Description](#description)
+        * [Instructions](#instructions)
+        * [Usage Information](#usage-information)
+        * [Constribution Guidelines](#contribution-guidelines)
 * [Link to Deployed Application](#link-to-deployed-application)
+* [Eamil](#email)
 * [Instructional Video](#instructional-video)
 * [Screenshot](#screenshot)
 
@@ -17,27 +23,32 @@
 
 # License:
 
-   MIT
-   ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
+   None
+   ![License](https://img.shields.io/badge/license-None-yellow.svg)
 
-### Description:
+### General:
 
-    lo
+   * Description: test
+   * Instructions: test
+   * Usage Information: test
+   * Contribution Guidelines: test
             
-***Requirements:***
-
-    lo
-        
 ### Link to Deployed Application:
 
-    lo
+    test
+    test
+
+### Email:
+
+    test
+    test
 
 ### Instructional Video:
 
-    lo
+    test
         
 ### Screenshot
     
-    lo
+    test
     
 [Table of Contents](#table-of-contents)
