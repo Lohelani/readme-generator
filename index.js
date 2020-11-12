@@ -82,10 +82,7 @@ const promptUser = () =>
 
 
 const generator = (data) =>
-    `
-   * ${renderBadges(data.license)}
-    
-    # ${data.name}
+    `# ${data.name}
 
 ## ${data.date}
 
@@ -98,10 +95,15 @@ const generator = (data) =>
 * [Link to Deployed Application](#link-to-deployed-application)
 * [Instructional Video](#instructional-video)
 * [Screenshot](#screenshot)
+
+
 ---
 
+# License:
 
-#### Description:
+   * ${data.license}${renderBadges(data.license)}
+
+### Description:
 
     ${data.description}
             
@@ -109,15 +111,15 @@ const generator = (data) =>
 
     ${data.requirements}
         
-# Link to Deployed Application:
+### Link to Deployed Application:
 
     ${data.github}
 
-# Instructional Video:
+### Instructional Video:
 
     ${data.video}
         
-# Screenshot
+### Screenshot
     
     ${data.screenshot}
     
