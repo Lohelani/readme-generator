@@ -1,7 +1,36 @@
+// GIVEN a command-line application that accepts user input
+// WHEN I am prompted for information about my application repository
+// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
+// WHEN I enter my project title
+// THEN this is displayed as the title of the README
+
+// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+
+// WHEN I choose a license for my application from a list of options
+// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+
+// WHEN I enter my GitHub username
+// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+
+// WHEN I enter my email address
+// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+
+// WHEN I click on the links in the Table of Contents
+// THEN I am taken to the corresponding section of the README
+
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+
+function renderBadges(license) {
+    if (license !== "None"){
+        return `![License](https://img.shields.io/badge/license-${license}-yellow.svg)`;
+    }
+    return ''
+}
 
 const promptUser = () =>
     inquirer
@@ -28,12 +57,6 @@ const promptUser = () =>
                     message: "What are the requirements/goals of this project?",
                 },
                 {
-                    type: "checkbox",
-                    name: "languages",
-                    message: "what languages do you use?",
-                    choices: [ "javascript", "node", "html", "css", "json", "inquirer", "fs"]
-                },
-                {
                     type: "input",
                     name: "github",
                     message: "Please link your Github repository to deployed project:",
@@ -48,38 +71,53 @@ const promptUser = () =>
                     name: "screenshot",
                     message: "Please provide a link to github screenshot.",
                 },
+                {
+                    type: "checkbox",
+                    name: "license",
+                    message: "what license do you use?",
+                    choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+                },
             ]
         )
 
-const tech = () => (
-for(var i = 0; i < data.languages.length; i ++){
-    console.log()
-})
+
 const generator = (data) =>
     `# ${data.name}
 
 ## ${data.date}
 
+===
+
+### Table of contents:
+* [Go to License section](#license)
+* [Go to Table of Contents section](#table-of-contents)
+* [Go to Description section](#description)
+* [Go to Requirements section](#requirements)
+* [Go to Link to Deployed Application section](#link-to-deployed-application)
+* [Go to Instructional Video section](#instructional-video)
+* [Go to Screenshot section](#screenshot)
+
+
+===
+
+# License:
+
+   * ${data.license}
+   * ${renderBadges(data.license)}
+
+## Table of Contents:
+    * 
+
 #### Description:
 
     ${data.description}
             
-***Requirements/Goals:***
+***Requirements:***
 
     ${data.requirements}
-
-# Tehcnologies Used:
-
-   * ${data.languages[0]}
-   * ${data.languages[1]}
-   * ${data.languages[2]}
-   * ${data.languages[3]}
-   * ${data.languages[4]}
-   * ${data.languages[5]}
-   * ${data.languages[6]}
         
 # Link to Deployed Application:
-nod
+
     ${data.github}
 
 # Instructional Video:
@@ -88,7 +126,9 @@ nod
         
 # Screenshot
     
-    ${data.screenshot}`
+    ${data.screenshot}
+    
+[Go to Table of Contents section](#table-of-contents)`
 
 
 const merp = async () => {
@@ -103,3 +143,6 @@ const merp = async () => {
 };
 
 merp();
+
+
+
