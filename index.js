@@ -1,24 +1,24 @@
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+// THEN a high-quality, professional README.md is generated with the title of my project ands entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 // WHEN I enter my project title
 // THEN this is displayed as the title of the README
 
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+// THEN this information is added to thes of the README entitled Description, Installation, Usage, Contributing, and Tests
 
 // WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+// THEN a badge for that license is added near the top of the README and a notice is added to the of the README entitled License that explains which license the application is covered under
 
 // WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// THEN this is added to the of the README entitled Questions, with a link to my GitHub profile
 
 // WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+// THEN this is added to the of the README entitled Questions, with instructions on how to reach me with additional questions
 
 // WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
+// THEN I am taken to the corresponding of the README
 
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -82,31 +82,24 @@ const promptUser = () =>
 
 
 const generator = (data) =>
-    `# ${data.name}
+    `
+   * ${renderBadges(data.license)}
+    
+    # ${data.name}
 
 ## ${data.date}
 
-===
+---
 
 ### Table of contents:
-* [Go to License section](#license)
-* [Go to Table of Contents section](#table-of-contents)
-* [Go to Description section](#description)
-* [Go to Requirements section](#requirements)
-* [Go to Link to Deployed Application section](#link-to-deployed-application)
-* [Go to Instructional Video section](#instructional-video)
-* [Go to Screenshot section](#screenshot)
+* [License](#license)
+* [Description](#description)
+* [Requirements](#requirements)
+* [Link to Deployed Application](#link-to-deployed-application)
+* [Instructional Video](#instructional-video)
+* [Screenshot](#screenshot)
+---
 
-
-===
-
-# License:
-
-   * ${data.license}
-   * ${renderBadges(data.license)}
-
-## Table of Contents:
-    * 
 
 #### Description:
 
@@ -128,7 +121,7 @@ const generator = (data) =>
     
     ${data.screenshot}
     
-[Go to Table of Contents section](#table-of-contents)`
+[Table of Contents](#table-of-contents)`
 
 
 const merp = async () => {
