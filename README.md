@@ -35,8 +35,8 @@
             
 ### Link to Deployed Application:
 
-    Lohelani
-    https://github.com/Lohelani/readme-generator
+Lohelani
+https://github.com/Lohelani/readme-generator
 
 ### Email:
 
@@ -45,10 +45,10 @@
 
 ### Instructional Video:
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5Uug1iW-1NI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5Uug1iW-1NI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
 ### Screenshot
     
-    ![image](https://user-images.githubusercontent.com/70550481/98981527-0df56580-24ec-11eb-84d9-ae31810a48ac.png)
+![image](https://user-images.githubusercontent.com/70550481/98981527-0df56580-24ec-11eb-84d9-ae31810a48ac.png)
     
 [Table of Contents](#table-of-contents)
