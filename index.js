@@ -101,7 +101,8 @@ const generator = (data) =>
 
 # License:
 
-   * ${data.license}${renderBadges(data.license)}
+   ${data.license}
+   ${renderBadges(data.license)}
 
 ### Description:
 

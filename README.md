@@ -1,6 +1,6 @@
-# lohelani
+# lo
 
-## 11/11
+## lo
 
 ---
 
@@ -17,26 +17,27 @@
 
 # License:
 
-   * APACHE 2.0![License](https://img.shields.io/badge/license-APACHE 2.0-yellow.svg)
+   MIT
+   ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 ### Description:
 
-    hjk
+    lo
             
 ***Requirements:***
 
-    hjkl
+    lo
         
 ### Link to Deployed Application:
 
-    hk
+    lo
 
 ### Instructional Video:
 
-    ghl
+    lo
         
 ### Screenshot
     
-    ghl
+    lo
     
 [Table of Contents](#table-of-contents)
