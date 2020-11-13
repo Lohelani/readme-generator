@@ -29,7 +29,7 @@
 ### General:
 
    * Description: This project uses Javascript and node to generate a readme file that can be used for multiple projects. The purpose of this is to provide the user with a fast readme generator that they can use and re-use.
-   * Instructions: To use this project the user must git clone the repo from github to their local device, open the cloned repo in their integrated terminal, and follow the prompts based on their project's specifications. Once the the user has answered all the questions, an error or success message will be given based upon the results of the generator. If success, a readme file will be generated.
+   * Instructions: To use this project the user must git clone the repo from github to their local device, open the cloned repo in their integrated terminal. User begins by running the command line npm init -y, and then npm install require to download the necessary require package. Then, also in the terminal, the user needs to run the command node index.js (the js file name for this project) and follow the prompts based on their project's specifications. Once the the user has answered all the questions, an error or success message will be given based upon the results of the generator. If success, a readme file will be generated.
    * Usage Information: N/A
    * Contribution Guidelines: N/A
             
