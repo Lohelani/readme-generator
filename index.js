@@ -106,7 +106,7 @@ const generator = (data) =>
     - [Instructions](#instructions)
     - [Usage Information](#usage-information)
     - [Constribution Guidelines](#contribution-guidelines)
-- [Link to Deployed Application](#link-to-deployed-application)
+- [Github Profile and Link to Deployed Application](#github-profile-and-link-to-deployed-application)
 - [Email](#email)
 - [Instructional Video](#instructional-video)
 - [Screenshot](#screenshot)
@@ -126,7 +126,7 @@ const generator = (data) =>
    * Usage Information: ${data.usage}
    * Contribution Guidelines: ${data.guidelines}
             
-### Link to Deployed Application:
+### Github Profile and Link to Deployed Application:
 
 - https://github.com/${data.username}
 - ${data.github}

@@ -13,7 +13,7 @@
     - [Instructions](#instructions)
     - [Usage Information](#usage-information)
     - [Constribution Guidelines](#contribution-guidelines)
-- [Link to Deployed Application](#link-to-deployed-application)
+- [Github Profile and Link to Deployed Application](#github-profile-and-link-to-deployed-application)
 - [Email](#email)
 - [Instructional Video](#instructional-video)
 - [Screenshot](#screenshot)
@@ -33,7 +33,7 @@
    * Usage Information: N/A
    * Contribution Guidelines: N/A
             
-### Link to Deployed Application:
+### Github Profile and Link to Deployed Application:
 
 - https://github.com/Lohelani
 - https://github.com/Lohelani/readme-generator
