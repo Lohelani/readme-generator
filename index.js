@@ -38,7 +38,7 @@ const promptUser = () =>
                 {
                     type: 'input',
                     name: 'instructions',
-                    message: 'Provide instructions on how to use this project',
+                    message: 'Provide instructions on how to use this project:',
                 },
                 {
                     type: 'input',
@@ -73,12 +73,12 @@ const promptUser = () =>
                 {
                     type: 'input',
                     name: 'video',
-                    message: 'Please provide a link to walkthrough video.',
+                    message: 'Please provide a link to walkthrough video:',
                 },
                 {
                     type: 'input',
                     name: 'screenshot',
-                    message: 'Please provide a screenshot.',
+                    message: 'Please provide a screenshot:',
                 },
                 {
                     type: 'checkbox',
@@ -128,8 +128,8 @@ const generator = (data) =>
             
 ### Link to Deployed Application:
 
-    ${data.username}
-    ${data.github}
+- https://github.com/${data.username}
+- ${data.github}
 
 ### Email:
 
@@ -138,11 +138,11 @@ const generator = (data) =>
 
 ### Instructional Video:
 
-    ${data.video}
+${data.video}
         
 ### Screenshot
     
-    ${data.screenshot}
+${data.screenshot}
     
 [Table of Contents](#table-of-contents)`
 
